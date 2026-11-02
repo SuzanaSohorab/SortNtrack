@@ -16,7 +16,7 @@ import Home from "./pages/Home.jsx";
 import PagePlaceholder from "./pages/PagePlaceholder.jsx";
 
 // Resident Pages
-import Dashboard from "./modules/resident/Dashboard.jsx";
+import Dashboard from "./modules/resident/ResidentDashboard.jsx";
 
 // Reusable page component
 const page = (title, description) => {
