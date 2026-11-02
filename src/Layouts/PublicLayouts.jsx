@@ -1,18 +1,19 @@
-import React from 'react';
-import NavBar from '../Compontents/NavBar';
-import { Outlet } from 'react-router';
-import Footer from '../Compontents/Footer';
+import { Outlet } from "react-router";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
-const MainLayouts = () => {
-    return (
-        <div className='bg-linear-to-br from-green-100 via-lime-100 to-emerald-100'>
-            <NavBar>
+const PublicLayout = () => {
+  return (
+    <div className="flex min-h-screen flex-col">
+      <Navbar />
 
-            </NavBar>
-            <Outlet></Outlet>
-            <Footer></Footer>
-        </div>
-    );
+      <main className="flex-1">
+        <Outlet />
+      </main>
+
+      <Footer />
+    </div>
+  );
 };
 
-export default MainLayouts;
+export default PublicLayout;
